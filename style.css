@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color:#fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+p {
+    margin: 0 0 10px;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+
+    
+}
+.header__iner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #515369;
+    padding: 35px 0;
+    align-items: center;
+
+
+}
+
+/*Nav*/
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.nav__link{
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    opacity: .75;
+    transition: .2s;
+}
+.nav__link:first-child{
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+    
+}
+
+
+/*intro*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 130px;
+    background: url("img/intro-bg.jpg")
+    no-repeat center /cover;
+    background-color: #31344e;
+}
+.intro__iner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intro__title{
+    margin: 0 0 30px;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/*Button*/
+.btn {
+    font-family: Raleway, sans-serif;
+    border: 0;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    font-style: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 2px;
+    transition: .1s linear;
+}
+.btn--red {
+    background-color: red;
+}
+
+.btn--red:hover {
+    background-color: rgb(190, 0, 0);
+
+}
+/*Features*/
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+    
+}
+.features__item {
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+
+    width: 33.33333%;
+}
+.features__icon {
+    margin-bottom: 25px; ;
+}
+.features__title {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.features__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: black;
+}
+/* Works */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.works__item {
+    width: 25%;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.works__item:hover .works__content {
+    opacity: 1;
+
+
+}
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69, .9);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.works__ttitle {
+    font-style: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.works__text{
+    font-style: 14px;
+    color: #fff;
+}
+
+
+
+/* Team */
+.team {
+    margin: 100px 0 70px;
+}
+.team__iner {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.team__item {
+    padding: 0 15px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+.team__photo {
+    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+.team__name {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: black;
+
+
+}
+.team__prof {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: crimson;
+    text-transform: uppercase;
+}
+.team__text {
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(8, 8, 8);
+}
