@@ -37,9 +37,6 @@ p {
     top: 0;
     left: 0;
     z-index: 1000;
-    
-
-    
 }
 .header__iner {
     display: flex;
@@ -47,11 +44,10 @@ p {
     border-bottom: 1px solid #515369;
     padding: 35px 0;
     align-items: center;
-
-
 }
 
 /*Nav*/
+
 .nav {
     display: flex;
     font-size: 13px;
@@ -127,6 +123,7 @@ p {
     padding: 14px 40px;
     border-radius: 2px;
     transition: .1s linear;
+    text-align: center;
 }
 .btn--red {
     background-color: red;
@@ -135,6 +132,9 @@ p {
 .btn--red:hover {
     background-color: rgb(190, 0, 0);
 
+}
+.btn--long {
+    min-width: 280px;
 }
 /*Features*/
 .features {
@@ -182,6 +182,7 @@ p {
 }
 .works__item:hover .works__content {
     opacity: 1;
+    cursor: pointer;
 
 
 }
@@ -264,4 +265,192 @@ p {
     font-size: 14px;
     line-height: 1.5;
     color: rgb(8, 8, 8);
+}
+
+/*Social */
+
+.social{
+    display: flex;
+}
+
+.social--footer {
+    justify-content: center;
+
+}
+
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 4px;
+    background: #fff;
+    transition: background .1s linear;
+
+}
+
+.social__item :hover {
+    background: #e8ecee;
+    transition: .1s;
+    opacity: 1;
+
+
+
+}
+.social__icon {
+    display: block;
+    opacity: .4;
+}
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+.social--footer .social__item:hover {
+    background-color: #fff;
+
+
+}
+ 
+/* rewievs */
+.rewievs {
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.rewievs__item {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.rewievs__photo {
+    width: 50%;
+    height: 485px;
+    position: relative;
+
+
+}
+
+.rewievs__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.rewievs__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+    width: 50%;
+}
+.rewievs__text {
+
+    font-family: 'Cardo', sans- serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.rewievs__autor {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+
+
+
+}
+
+/* Download */
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+.download__title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #0a0a0a;
+    font-weight: 300;
+}
+.download__text {
+    margin-bottom: 30px;
+    font-size: 13;
+    font-weight: 700;
+    color: #0a0a0a;
+    text-transform: uppercase;
+
+
+}
+
+/* Footer */
+.footer {
+    
+    background-color: #3a3e64;
+
+
+
+}
+.footer__inner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.footer__blok {
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 15px;
+}
+.footer__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+
+}
+
+.footer__address {
+    line-height: 1.5;
+    font-size: 14px;
+    font-style: normal;
+
+    color: rgba(255, 253, 253, 0.5);
+}
+
+.footer__text {
+
+    line-height: 1.5;
+    font-size: 14px;
+    color: rgba(255, 253, 253, 0.5);
+}
+
+
+
+/* Copyright */
+.copyright{
+    padding: 20px 0;
+    background-color: #36384b;
+}
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    color: #b4b7bb;
+    line-height: 1.5;
+
+
+}
+.copyright__text span {
+    color: #fff;
 }
